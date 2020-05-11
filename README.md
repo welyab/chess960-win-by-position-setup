@@ -31,6 +31,10 @@ Over more than `4.57 millions` of games, the white pieces won `49.17%` of the ga
 
 The white pieces have a positive win difference in `880` game setups, and this black pieces won more games in `78` setups.
 
+The setup `NNBQRBKR` is the first in number of draws, with `246`, over `4782` games playes in the positions.
+
+The setup with less draws is `BNRNKBRQ`, with `123`, over `4710` games. In fact, the setup with less draws is wich has the same configuration of standard chess. Maybe the players cancels the game with got that setup. It has only 1280 games.
+
 ## Conclusion
 
 The results shown that white pieces have an advantage. The positions setup where black have an advantage are expressively less that positions where white won more.
