@@ -1,6 +1,47 @@
 # Chess960 Win by Position Setup
 
-Analyzes the results of more than 4.57 million chess games in the Chess960 variant
+Analyzes the results of more than 4.57 million chess games in the Chess960 variant.
+-
+
+As well known, the disposition of pieces in the board are fixed in rook, knight, bishop, queen, king, bishop, knight and rook. In the year 1996 the great chess player Bobby Fischer proposed and variation where the pieces are placed in a random order, restricted to some rules. At the end, there are 960 possibilities. This chess variation turns the memorization of opening very difficult, so the criativity incriases.
+
+The games were played on the [Lichess](https://lichess.org/) platform. PGN files are made available by themselves in the game [database](https://database.lichess.org/) at the end of each month. This project used the archives until April.
+
+A PGN file parse was programmed in order to read the game files. The source code is in the `pgnparser` folder and is under development. The parser is part of another project that will be a complete chess movement generator with some other features.
+
+This analysis focus on show the results. So, the PGN parser will be not commented.
+
+## The Results
+
+### Biggest win diff for white
+
+The setup `RNBKRBQN` has a difference of 323 wins more for white side, over a total of `4828` games played in that position.
+
+### Biggest win diffe for black
+
+The setup `RKRBBQNN` has a difference of 126 wins more for black side, over a total of `4596` games played in that position.
+
+### Most balanced setup
+
+The setups `BNRQNKRB` and `NQRNBBKR` are the most balanced, with same number of wins for white and black, over a total of `9719` games with these positions.
+
+### Win rate
+
+Over more than `4.57 millions` of games, the white pieces won `49.17%` of the games, and black pieces won `47.1%`.
+
+The white pieces have a positive win difference in `880` game setups, and this black pieces won more games in `78` setups.
+
+## Conclusion
+
+The results shown that white pieces have an advantage. The positions setup where black have an advantage are expressively less that positions where white won more.
+
+As work for future, it is possible to analyse results in standard chess in order to compare with Chess960 variant.
+
+Chess is a game where the possible positions are very, very high. So, an analysis over only 4.5 millions of games may not show curated results. For comparision, the database for standard games in Liches has 1.19 billion of games.
+
+
+---
+The follow table shows the raw results.
 
 | PIECE SETUP | UNKNOWN     | DRAW | WHITE WIN | BLACK WIN | WHITE/BLACK WIN DIFF |
 |-------------|-------------|------|-----------|-----------|----------------------|
